@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .weather-container.loading {
+  opacity: 0.5;
+}
+  
+  .weather-input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .weather-info {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .weather-info.loading {
+    opacity: 1;
+  }
+  
+  
